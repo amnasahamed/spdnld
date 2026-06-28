@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+backend/venv/
+
+# SpotDL downloads
+backend/downloads/
+
+# Mac
+.DS_Store
+
+# Frontend
+frontend/dist/
+# Note: Usually we don't commit dist, but since we are serving it via FastAPI 
+# and user wants a simple git push deployment, we WILL commit dist.
+# So I am not ignoring frontend/dist/ in this specific case, wait, let's ignore it and they can build it on the server.
+# No, let's commit it so they don't need node on the server!
+!frontend/dist/
